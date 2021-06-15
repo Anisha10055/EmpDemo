@@ -12,8 +12,6 @@ import com.cg.empdemo.entities.Employee;
 import com.cg.empdemo.services.IEmployeeService;
 
 @RestController
-@CrossOrigin("*")
-@RequestMapping("/api/empproject")
 public class EmployeeController {
 	
 	@Autowired
