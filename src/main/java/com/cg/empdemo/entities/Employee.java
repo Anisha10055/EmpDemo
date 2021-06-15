@@ -1,9 +1,27 @@
 package com.cg.empdemo.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "emp_table")
 public class Employee {
+	@Id
+	@Column(name="emp_id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int empId;
+	
+	@Column(name="emp_name", nullable=false)
 	private String empName;
+	
+	@Column(name="emp_salary", nullable=false)
 	private double empSalary;
+	
+	
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub

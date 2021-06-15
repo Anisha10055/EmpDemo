@@ -1,9 +1,11 @@
 package com.cg.empdemo.services;
 import java.util.List;
 
-import com.cg.empdemo.entities.Employee;
+import org.springframework.stereotype.Service;
 
+import com.cg.empdemo.entities.Employee;
+@Service
 public interface IEmployeeService {
-	List<Employee> findAll();
+	public List<Employee> viewEmployees();
 
 }
