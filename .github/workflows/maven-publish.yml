@@ -30,6 +30,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
+    - name: Deploy to Tomcat
+      run: curl -v -u admin:admin -T C:\Users\ANIRAJEN\actions-runner\Local_work\EmpDemo\EmpDemo\target\EmpDemo-0.0.1-SNAPSHOT.war 'http://localhost:5656/manager/html/deploy?path=/empgdemo'
+      
     - name: notify-microsoft-teams
       uses: Skitionek/notify-microsoft-teams@v1.0.4
       with:
