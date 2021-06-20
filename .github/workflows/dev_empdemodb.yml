@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: local_runner
 
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn -B package --file pom.xml
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
