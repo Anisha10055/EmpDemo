@@ -31,7 +31,7 @@ jobs:
         path: '${{ github.workspace }}/target/*.war'
 
   deploy:
-    runs-on: windows-latest
+    runs-on: local_runner
     needs: build
     environment:
       name: 'production'
