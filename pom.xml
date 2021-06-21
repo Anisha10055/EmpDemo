@@ -17,6 +17,10 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<cargo.remote.username>capg_admin</cargo.remote.username>
+            <cargo.remote.password>capg_admin</cargo.remote.password>
+            <cargo.tomcat.manager.url>http://in-mum-eadm-dev:9444/empldemo/
+              </cargo.tomcat.manager.url>
 	</properties>
 	<dependencies>
 		<dependency>
