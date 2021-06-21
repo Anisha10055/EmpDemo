@@ -17,7 +17,7 @@ public class EmployeeController {
 	@Autowired
 	IEmployeeService employeeService;
 	
-	@RequestMapping(value = "/empdetails", method = RequestMethod.GET)
+	@RequestMapping(value = "/empdetailsdb", method = RequestMethod.GET)
 	public List<Employee> getEmployee()
 	{
 		List<Employee> employees = employeeService.viewEmployees();
